@@ -1,0 +1,14 @@
+#!/bin/bash
+
+FILE="/var/stateexample/state.txt"
+
+if [ -f "$FILE" ]; then
+    cat "$FILE"
+else
+    echo "$FILE does not exist."
+fi
+
+echo "Enter a message:"
+read USER_INPUT
+echo "$USER_INPUT" > "$FILE"
+cat "$FILE"

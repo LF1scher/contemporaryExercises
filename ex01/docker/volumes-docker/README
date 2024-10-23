@@ -1,0 +1,5 @@
+Without -it the shell isn't interactive, i can't enter the user input.
+
+Without a volume the file also isn't persistent, gets reset every run.
+
+Attach with -v flag -> File persists
